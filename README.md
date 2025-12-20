@@ -115,6 +115,21 @@ I recommend getting your GIF link using github
 
 ---
 
+## THEME CREDITS:
+
+- **[Discordia](https://github.com/ungiglio/DiscordDiscordia)**
+- **[Translucence](https://betterdiscord.app/theme/Translucence)**
+- **[Dark Purple](https://betterdiscord.app/theme/Dark%2B)**
+- **[Frosted Glass](https://betterdiscord.app/theme/Frosted%20Glass)**
+- **[Wizard UI](https://betterdiscord.app/theme/WizardUI)**
+- **[Fallout4 Terminal](https://github.com/PepeBigotes/Fallout4TerminalColorTheme)**
+- **[Spotify Discord](https://betterdiscord.app/theme/Spotify%20Discord)**
+- **[Discord Plus](https://betterdiscord.app/theme/Discord%2B)**
+- **[Clear Vision](https://betterdiscord.app/theme/ClearVision)**
+- **[Dark Matter](https://betterdiscord.app/theme/Dark%20Matter)**
+
+---
+
 ## Found this useful?<img src="https://media.tenor.com/23NitOvEEkMAAAAj/optical-illusion-rotating-head.gif" width="30"><br>
 
 [![Follow Me <3](https://img.shields.io/badge/Follow%20Me%20%3C3-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/landnthrn)   
