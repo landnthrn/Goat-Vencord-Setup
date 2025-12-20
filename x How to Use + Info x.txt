@@ -1,5 +1,5 @@
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 VENCORD-CONFIGURATIONS-BY-LANDN.THRN
 
@@ -14,7 +14,7 @@ https://github.com/Vendicated/Vencord
 Vencord Discord:  
 https://discord.gg/xymWt9QRbp  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 HOW TO IMPORT SETTINGS:
 
@@ -24,7 +24,7 @@ HOW TO IMPORT SETTINGS:
 
 — Import a Vencord profile setting of your choosing  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 HOW TO IMPORT THEMES:
 
@@ -42,7 +42,7 @@ HOW TO IMPORT THEMES:
 
 If the themes aren't applying then try turning your Discord Nitro theme to dark default  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 HOW TO TWEAK THE IMAGE OF DISCORDIA THEME:
 
@@ -74,7 +74,7 @@ HOW TO TWEAK THE IMAGE OF DISCORDIA THEME:
 
 Try out your customized Discordia theme!!  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 HOW TO CUSTOMIZE THE DISCORD ICON FOR DISCORDIA:
 
@@ -104,7 +104,7 @@ HOW TO CUSTOMIZE THE DISCORD ICON FOR DISCORDIA:
 
 Try out your customized Discord icon!!  
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I tweaked Discordia theme to support GIF's and even transparent GIF's for Discord Icon  
 I recommend getting your GIF link using GitHub  
