@@ -1,7 +1,7 @@
 /**
  * @name Discordia TWEAKED 1
  * @author ungiglio
- * @version 1.1.1
+ * @version 25.1
  * @source https://github.com/ungiglio/DiscordDiscordia/
  * @website https://ungiglio.github.io/DiscordDiscordia/
  * @description Lande della Discordia implements a glass purple and lightblue details on your client!
@@ -9,60 +9,82 @@
  * @invite DDaRdZwB4h
 */
 
-@import url("https://ungiglio.github.io/DiscordDiscordia/AWKGLASS/v2.awkglass.css"); /* standard edition */
-/*@import url("https://ungiglio.github.io/DiscordDiscordia/BACKGROUNDLESS/backgroundless.css"); /* backgroundless edition */
-@import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/colored_mentions/mentions.css"); /* credits to davart154 for the original code */
-@import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/colored_userlist/userlist.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/title_bar/custom_title.css"); /* comment/remove to bring back server icon and name in topbar */
+/* ======================================================================== */
+/* 1. LOADER (don't touch it) */
+/* ======================================================================== */
 
-/* CUSTOMIZATION CONTROL CENTER */
+@import url('https://ungiglio.github.io/DiscordDiscordia/awkglass/loader.css');
+
+
+/* ======================================================================== */
+/* 2. USER SETTINGS */
+/* ======================================================================== */
+
 :root {
-  --rgb-highlight: 178, 102, 255;                          /* The main highlight color */
-  --rgb-close-button: 224, 58, 62;                         /* Close / deny */
-  --rgb-online-color: 171, 135, 255;                       /* Online dot */
-  --rgb-afk-color: 145, 97, 255;                           /* Idle dot */
-  --rgb-dnd-color: 224, 58, 62;                            /* DND dot */
-  --rgb-streaming-color: 145, 97, 255;                     /* Streaming dot */
-  --status-danger-rgb: rgb(152, 51, 255);                  /* Danger actions */
+    /* --- BACKGROUND AND IMAGES --- */
+    /* Background Image */
+    --custom-image-url: url('https://i.imgur.com/XHRU0vy.jpeg');
 
-  --transition-time: .3s;				/* How fast animations added by the theme happen. Default is 0.3 seconds */
+    /* Image blur (default: 8px) */
+    --app-blur: 5.5px;
+    
 
-  --custom-title-font-size: 14px;			/* The size in pixels of the custom title text */
-  --custom-title-font-family: "Pirata One", var(--font-primary);
+    /* --- MAIN COLORS --- */
+    --rgb-highlight: 49, 23, 103;
 
-  --custom-channel-header-color: rgb(223, 205, 245);
-  --custom-channel-icon: rgb(132, 117, 186);			
-  --channel-icon: rgb(127, 117, 186) !important;		
-  --custom-selected-channel-color: rgb(77, 209, 189);		
-  --cat-custom-color-rgba: 134, 119, 166;			
-  --cat-custom-color: rgb(var(--cat-custom-color-rgba));	
+    /* Danger/Close Button color */
+    --rgb-close-button: 224, 58, 62;
 
-  --custom-spoiler-color: rgb(148, 83, 212)!important;		
 
-  --darkPurple-background: rgb(26, 0, 59);			
+    /* --- USER STATUS (RGB format) --- */
+    --rgb-online-color: 144, 101, 230;        /* Online (Lighter Purple) */
+    --rgb-afk-color: 144, 101, 230;            /* Idle (Lighter Purple) */
+    --rgb-dnd-color: 224, 58, 62;             /* DnD (Red) */
+    --rgb-streaming-color: 144, 101, 230;       /* Streaming (Lighter Purple) */
 
-  --custom-image-url: url('https://i.imgur.com/XHRU0vy.jpeg'); /* background image */
-  --app-blur: 5.5px;					       /* background image blur */
+    --status-danger-rgb: rgb(49, 23, 103);   /* Danger actions */
 
-  /* Home icon image (use encoded URL; this one displays directly) */
-  --custom-logo: url("https://raw.githubusercontent.com/landnthrnnn/DUMP/refs/heads/main/TrippyDiscordIconGIF.gif");
-  --custom-logo-hover: url("https://raw.githubusercontent.com/landnthrnnn/DUMP/refs/heads/main/TrippyDiscordIconGIF.gif");
+    --transition-time: .3s;
 
-  /* FONTS */
-  --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-  --font-clan-body: Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-clan-signature: Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display-marketing: 'ABC Ginto Nord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* --- TITLE AND ICONS CUSTOMIZATION --- */
+    --custom-title-text: "Lande della Discordia";                   /* The custom text you want to display */
+    --custom-title-font-size: 14px;                                 /* The size in pixels of the custom title text */
+    --custom-title-font-family: "Pirata One", var(--font-primary);  /* The font family of the custom title */
+
+    /* Home/DM Icon (Discord logo left top) */
+    --custom-logo: url("https://raw.githubusercontent.com/landnthrnnn/DUMP/refs/heads/main/TrippyDiscordIconGIF.gif");
+    --custom-logo-hover: url("https://raw.githubusercontent.com/landnthrnnn/DUMP/refs/heads/main/TrippyDiscordIconGIF.gif");
+
+    --show-dev-panel-info-static: 0; /* Set to 1 to show the static version, 0 to hide | (NOTE: for static to work also hover need to be 1) */
+    --show-dev-panel-info-hover: 1; /* Set to 1 to show the static or hover version, put 0 to hide */
+
+    /* --- CHANNEL COLORS --- */
+    --custom-channel-header-color: rgb(104, 68, 159);
+    --custom-channel-icon: rgb(104, 68, 159);
+    --channel-icon: rgb(104, 68, 159) !important;
+    --custom-selected-channel-color: rgb(77, 209, 189);
+    --cat-custom-color-rgba: 104, 68, 159;
+    --cat-custom-color: rgb(var(--cat-custom-color-rgba));
+
+    --custom-spoiler-color: rgb(49, 23, 103)!important;
+
+    --darkPurple-background: rgb(26, 0, 59);
+
+    /* --- FONTS --- */
+    --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display-marketing: 'ABC Ginto Nord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Force delete (trash) icon color */
 [aria-label="Delete"]:not(:hover) svg,
 [aria-label="Delete"]:not(:hover) svg path {
-  color: #AB87FF !important;
-  fill:  #AB87FF !important;
+  color: #68449F !important;
+  fill:  #68449F !important;
 }
 
 /* Keep hover/click as danger red */
@@ -106,57 +128,58 @@
 [class*="activityIcon-"],
 [class*="activityIcon-"] svg,
 [class*="activityIcon-"] path {
-  color: rgb(145, 97, 255) !important;
-  fill:  rgb(145, 97, 255) !important;
+  color: rgb(104, 68, 159) !important;
+  fill:  rgb(104, 68, 159) !important;
 }
 
 /* Mobile phone icon */
 [class*="mobileIcon-"],
 [class*="mobileIcon-"] svg,
 [class*="mobileIcon-"] path {
-  color: rgb(145, 97, 255) !important;
-  fill:  rgb(145, 97, 255) !important;
+  color: rgb(104, 68, 159) !important;
+  fill:  rgb(104, 68, 159) !important;
 }
 
 /* Voice / streaming / screen share indicators */
 [class*="icon-"],
 [class*="icon-"] svg,
 [class*="icon-"] path {
-  color: rgb(145, 97, 255) !important;
-  fill:  rgb(145, 97, 255) !important;
+  color: rgb(104, 68, 159) !important;
+  fill:  rgb(104, 68, 159) !important;
 }
 
-/* ---- (Fixing a glitch with this one) Force every presence color to purple (rgb(171, 135, 255)) ---- */
+/* ---- (Fixing a glitch with this one) Force every presence color to lighter purple (rgb(144, 101, 230)) ---- */
 
 /* 1) Token-level overrides (covers most places) */
 :root {
-  --status-online: rgb(171, 135, 255) !important;
-  --status-idle: rgb(171, 135, 255) !important;
-  --status-dnd: rgb(171, 135, 255) !important;
-  --status-invisible: rgb(171, 135, 255) !important;
-  --status-offline: rgb(171, 135, 255) !important;
-  --status-streaming: rgb(171, 135, 255) !important;
+  --status-online: rgb(144, 101, 230) !important;
+  --status-idle: rgb(144, 101, 230) !important;
+  --status-dnd: rgb(144, 101, 230) !important;
+  --status-invisible: rgb(144, 101, 230) !important;
+  --status-offline: rgb(144, 101, 230) !important;
+  --status-streaming: rgb(144, 101, 230) !important;
 
   /* If you still see green in a few spots, uncomment the next line.
      It overrides Discord's generic "positive/green" token used by presence in some UIs. */
-  /* --status-positive: rgb(171, 135, 255) !important; */
+  /* --status-positive: rgb(144, 101, 230) !important; */
 }
 
-/* 2) SVG fallback: force the actual dots/icons to purple regardless of state label */
+/* 2) SVG fallback: force the actual dots/icons to lighter purple regardless of state label */
 svg[aria-label="Online"] *,
 svg[aria-label="Idle"] *,
 svg[aria-label="Do Not Disturb"] *,
 svg[aria-label="Invisible"] *,
 svg[aria-label="Offline"] *,
 svg[aria-label="Streaming"] * {
-  fill: rgb(171, 135, 255) !important;
-  color: rgb(171, 135, 255) !important;
+  fill: rgb(144, 101, 230) !important;
+  color: rgb(144, 101, 230) !important;
 }
 
 /* Bottom-left user panel sometimes uses a masked circle — catch that too */
 [class*="status"] svg *,
 [class*="profilePanel"] [class*="status"] *, 
 [class*="container"] [class*="status"] * {
-  fill: rgb(171, 135, 255) !important;
-  color: rgb(171, 135, 255) !important;
+  fill: rgb(144, 101, 230) !important;
+  color: rgb(144, 101, 230) !important;
 }
+
